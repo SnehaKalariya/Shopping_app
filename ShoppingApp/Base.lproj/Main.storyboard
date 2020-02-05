@@ -174,18 +174,28 @@
                                     <outlet property="delegate" destination="3ml-b8-fd8" id="ff0-O9-Vvu"/>
                                 </connections>
                             </collectionView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heQ-tA-qLB">
+                                <rect key="frame" x="123.5" y="322" width="128" height="23"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8Kp-3V-5lF" firstAttribute="leading" secondItem="Atf-cD-hnD" secondAttribute="leading" id="58b-Xh-gsU"/>
                             <constraint firstItem="8Kp-3V-5lF" firstAttribute="top" secondItem="OTY-G3-Buj" secondAttribute="top" id="Nv0-Zq-4FJ"/>
+                            <constraint firstItem="heQ-tA-qLB" firstAttribute="centerY" secondItem="OTY-G3-Buj" secondAttribute="centerY" id="TYk-ZJ-vKH"/>
                             <constraint firstAttribute="trailing" secondItem="8Kp-3V-5lF" secondAttribute="trailing" id="fTs-1Q-1Cf"/>
                             <constraint firstItem="8Kp-3V-5lF" firstAttribute="bottom" secondItem="OTY-G3-Buj" secondAttribute="bottom" id="jTF-F2-hEb"/>
+                            <constraint firstItem="heQ-tA-qLB" firstAttribute="centerX" secondItem="OTY-G3-Buj" secondAttribute="centerX" id="x0t-W5-LhS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OTY-G3-Buj"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="8Kp-3V-5lF" id="D2e-WK-o7q"/>
+                        <outlet property="lblNoData" destination="heQ-tA-qLB" id="8Mm-Dj-XfC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CiG-gr-C9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

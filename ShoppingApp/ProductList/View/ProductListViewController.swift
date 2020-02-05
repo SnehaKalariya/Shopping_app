@@ -15,7 +15,7 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
     var rightbarBtn : UIBarButtonItem!
     var productListVM = ProductListVM()
     var dataSourceProduct = [CategoryProduct]()
-    
+    @IBOutlet weak var lblNoData: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,6 +98,15 @@ class ProductListViewController: UIViewController,UICollectionViewDelegate,UICol
             }
         }
         self.dataSourceProduct = filterArray
+        
+       
+        if filterArray.count == 0{
+            self.collectionView.isHidden = true
+            self.lblNoData.isHidden = false
+        }else{
+            self.collectionView.isHidden = false
+            self.lblNoData.isHidden = true
+        }
         self.collectionView.reloadData()
     }
     
