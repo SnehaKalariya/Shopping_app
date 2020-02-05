@@ -21,6 +21,9 @@
 		B979D04423E6E87900C9723E /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979D04323E6E87900C9723E /* WebServiceHandler.swift */; };
 		B979D04623E6E8C300C9723E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979D04523E6E8C300C9723E /* HomeViewModel.swift */; };
 		B979D04823E6EC1A00C9723E /* ShoppingApiResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979D04723E6EC1A00C9723E /* ShoppingApiResponseModel.swift */; };
+		B9939FCA23EB221C00B1EF48 /* ProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9939FC923EB221C00B1EF48 /* ProductDataModel.swift */; };
+		B9939FCC23EB223D00B1EF48 /* ProductListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9939FCB23EB223D00B1EF48 /* ProductListVM.swift */; };
+		B9939FCE23EB225500B1EF48 /* CustomPopOverMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9939FCD23EB225500B1EF48 /* CustomPopOverMenuVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		B979D04323E6E87900C9723E /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
 		B979D04523E6E8C300C9723E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B979D04723E6EC1A00C9723E /* ShoppingApiResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingApiResponseModel.swift; sourceTree = "<group>"; };
+		B9939FC923EB221C00B1EF48 /* ProductDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDataModel.swift; sourceTree = "<group>"; };
+		B9939FCB23EB223D00B1EF48 /* ProductListVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListVM.swift; sourceTree = "<group>"; };
+		B9939FCD23EB225500B1EF48 /* CustomPopOverMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopOverMenuVC.swift; sourceTree = "<group>"; };
 		F0610D87CB66642A327B39D4 /* Pods_ShoppingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShoppingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +103,7 @@
 		A015B02823E9A14A0096538C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				B9939FCB23EB223D00B1EF48 /* ProductListVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -112,6 +119,7 @@
 		B908064623E9FFF200063DDD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B9939FC923EB221C00B1EF48 /* ProductDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 		B979D04223E6E84E00C9723E /* CommonClasses */ = {
 			isa = PBXGroup;
 			children = (
+				B9939FCD23EB225500B1EF48 /* CustomPopOverMenuVC.swift */,
 				B979D04323E6E87900C9723E /* WebServiceHandler.swift */,
 				A015B02523E992190096538C /* SharedClass.swift */,
 			);
@@ -358,11 +367,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9939FCE23EB225500B1EF48 /* CustomPopOverMenuVC.swift in Sources */,
 				B979D02123E6E1B700C9723E /* ShoppingApp.xcdatamodeld in Sources */,
 				A015B02B23E9A1B10096538C /* ProductListViewController.swift in Sources */,
 				A015B02623E992190096538C /* SharedClass.swift in Sources */,
 				B979D01723E6E1B700C9723E /* AppDelegate.swift in Sources */,
 				B979D04123E6E50C00C9723E /* HomeViewController.swift in Sources */,
+				B9939FCA23EB221C00B1EF48 /* ProductDataModel.swift in Sources */,
+				B9939FCC23EB223D00B1EF48 /* ProductListVM.swift in Sources */,
 				B979D04823E6EC1A00C9723E /* ShoppingApiResponseModel.swift in Sources */,
 				A015B02423E985FF0096538C /* SubCategoryTableViewController.swift in Sources */,
 				B979D04623E6E8C300C9723E /* HomeViewModel.swift in Sources */,
